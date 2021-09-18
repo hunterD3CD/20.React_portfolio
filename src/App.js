@@ -1,11 +1,20 @@
-import './App.css';
+import "./App.css";
+// //////////////////////////////////////////////////import react and other child components ///////////////////////////////////////////////
+import React from "react";
+import About from "./components/About";
+import Nav from "./components/Nav";
 
+// ////////////////////////////////////////////////////Render child components in App component ////////////////////////////////////////////
 function App() {
   return (
-    <div className="App">
-      hello world
+    <div>
+      <Nav />
+      <main>
+        <About />
+      </main>
     </div>
   );
 }
 
+// ////////////////////////////////////////////////////Export App component  //////////////////////////////////////////////////////////////
 export default App;
