@@ -7,8 +7,13 @@ function Nav(props) {
   // pass in contactSelected and setContactSelected to the Nav component as props
   // deconstruct the contactSelected and setContactSelected functions from props
   const {
+    aboutSelected,
+    setAboutSelected,
     contactSelected,
     setContactSelected,
+    resumeSelected,
+    setResumeSelected,
+
   }= props;
 
   const  categories = [
@@ -31,20 +36,36 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           {/* //////////////////////////////////////////////////////////////////////////// About me ///////////////////////////// */}
-          <li className="mx-2">
-            <a href="#about" onClick={() => setContactSelected(false)}>
+          <li className={`mx-2 ${aboutSelected && 'navActive'}`}>
+            <a href="#about" onClick={() => {
+              setAboutSelected(true);
+              setContactSelected(false); 
+              setResumeSelected(false);
+              }}
+            >
               About me
             </a>
           </li>
           {/* //////////////////////////////////////////////////////////////////////////// Resume   ///////////////////////////// */}
-          <li className="mx-2">
-          <span onClick={() => setContactSelected(false)}>
+          <li className={`mx-2 ${resumeSelected && 'navActive'}`}>
+          <span onClick={() => {
+            setAboutSelected(false);
+            setContactSelected(false);
+            setResumeSelected(true);
+            }}
+          >
               Resume
             </span>
           </li>
           {/* //////////////////////////////////////////////////////////////////////////// Contact   ///////////////////////////// */}
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+            <span onClick={() => {
+              setAboutSelected(false);
+              setContactSelected(true);
+              setResumeSelected(false);
+              }}
+            >
+              Contact</span>
           </li>
           {/* //////////////////////////////////////////////////////////////////////////// Portfolio   ///////////////////////////// */}
           {
