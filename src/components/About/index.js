@@ -1,11 +1,22 @@
-import React from "react";
+// //////////////////////////////////////////////////import react and other source ///////////////////////////////////////////////
+import React from 'react'
+import coverImage from "../../assets/cover/cover-image.jpg";
 
+// //////////////////////////////////////////////////JSX /////////////////////////////////////////////////////////////////////////
 function About() {
+
   return (
-    <section className="my-5">
-      <h1 id="about">Chao's portfolio</h1>
+    <section className="my-5" >
+      <h1 id="about">Welcome to Chao's Portfolio</h1>
+      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+      <div className="my-2">
+        <p>
+          I love design!
+      </p>
+      </div>
     </section>
-  );
+  )
 }
 
+// ////////////////////////////////////////////////////Export About component  ////////////////////////////////////////////////////
 export default About
