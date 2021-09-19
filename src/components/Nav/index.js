@@ -3,7 +3,14 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 // //////////////////////////////////////////////////////////////// Nav Component /////////////////////////////////////////////////
-function Nav() {
+function Nav(props) {
+  // pass in contactSelected and setContactSelected to the Nav component as props
+  // deconstruct the contactSelected and setContactSelected functions from props
+  const {
+    contactSelected,
+    setContactSelected,
+  }= props;
+
   const  categories = [
     { name: 'commercial work', description: 'Works that provided for commercial use' },
     { name: 'educational work', description: 'Works that provided for educational use' }
@@ -23,21 +30,23 @@ function Nav() {
       </h2>
       <nav>
         <ul className="flex-row">
+          {/* //////////////////////////////////////////////////////////////////////////// About me ///////////////////////////// */}
           <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
+            <a href="#about" onClick={() => setContactSelected(false)}>
               About me
             </a>
           </li>
+          {/* //////////////////////////////////////////////////////////////////////////// Resume   ///////////////////////////// */}
           <li className="mx-2">
-          <span onClick={() => handleClick()}>
+          <span onClick={() => setContactSelected(false)}>
               Resume
             </span>
           </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
-              Contact
-            </span>
+          {/* //////////////////////////////////////////////////////////////////////////// Contact   ///////////////////////////// */}
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
+          {/* //////////////////////////////////////////////////////////////////////////// Portfolio   ///////////////////////////// */}
           {
             categories.map((category) => (
               <li className="mx-1" key={category.name} >
