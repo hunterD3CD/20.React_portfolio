@@ -2,7 +2,7 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-// ////////////////////////////////////////////////////////////////JSX ///////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////// Nav Component /////////////////////////////////////////////////
 function Nav() {
   const  categories = [
     { name: 'commercial work', description: 'Works that provided for commercial use' },
@@ -13,6 +13,7 @@ function Nav() {
     console.log("click handled")
   }
 
+  //   -----------------------------------------------------------------------JSX: a language that can represent HTML in JavaScript
   return (
     <header data-testid="header" className="flex-row px-1">
       <h2>
