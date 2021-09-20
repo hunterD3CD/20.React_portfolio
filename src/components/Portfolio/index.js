@@ -12,7 +12,7 @@ function Portfolio() {
 //   -----------------------------------------------------------------------JSX: a language that can represent HTML in JavaScript
   return (
     <section>
-      <h1>Welcome to Portfolio</h1>
+      <h1>Welcome to Chao's Portfolio</h1>
       <p>Below are projects that I worked on. Looking forward to hear more comments.</p>
       <div className="flex-row">
         <div className="flex-column">

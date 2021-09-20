@@ -13,8 +13,9 @@ function About() {
       <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
       <div className="my-2">
         <p>
-          I love design!
+          I love design! Please visit my github below.
       </p>
+      <a href="https://github.com/hunterD3CD/11-note-taker-express">github</a>
       </div>
     </section>
   )
