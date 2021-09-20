@@ -1,6 +1,6 @@
 // //////////////////////////////////////////////////import react and other source ///////////////////////////////////////////////
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+// import { capitalizeFirstLetter } from "../../utils/helpers";
 
 // //////////////////////////////////////////////////////////////// Nav Component /////////////////////////////////////////////////
 function Nav(props) {
@@ -13,17 +13,9 @@ function Nav(props) {
     setContactSelected,
     resumeSelected,
     setResumeSelected,
-
+    portfolioSelected,
+    setPortfolioSelected,
   }= props;
-
-  const  categories = [
-    { name: 'commercial work', description: 'Works that provided for commercial use' },
-    { name: 'educational work', description: 'Works that provided for educational use' }
-  ];
-
-  const handleClick = () => {
-    console.log("click handled")
-  }
 
   //   -----------------------------------------------------------------------JSX: a language that can represent HTML in JavaScript
   return (
@@ -41,6 +33,7 @@ function Nav(props) {
               setAboutSelected(true);
               setContactSelected(false); 
               setResumeSelected(false);
+              setPortfolioSelected(false);
               }}
             >
               About me
@@ -52,6 +45,7 @@ function Nav(props) {
             setAboutSelected(false);
             setContactSelected(false);
             setResumeSelected(true);
+            setPortfolioSelected(false);
             }}
           >
               Resume
@@ -63,20 +57,22 @@ function Nav(props) {
               setAboutSelected(false);
               setContactSelected(true);
               setResumeSelected(false);
+              setPortfolioSelected(false);
               }}
             >
               Contact</span>
           </li>
           {/* //////////////////////////////////////////////////////////////////////////// Portfolio   ///////////////////////////// */}
-          {
-            categories.map((category) => (
-              <li className="mx-1" key={category.name} >
-                <span onClick={() => { handleClick(); }}>
-                 {capitalizeFirstLetter(category.name)}
-                </span>
-              </li>
-            ))
-          }
+          <li className={`mx-2 ${portfolioSelected && 'navActive'}`}>
+            <span onClick={() => {
+              setAboutSelected(false);
+              setContactSelected(false);
+              setResumeSelected(false);
+              setPortfolioSelected(true);
+              }}
+            >
+              Portfolio</span>
+          </li>
         </ul>
       </nav>
     </header>
