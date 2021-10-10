@@ -15,7 +15,7 @@ function About() {
         <p>
           I love design! Please visit my github below.
       </p>
-      <a href="https://github.com/hunterD3CD/11-note-taker-express">github</a>
+      <a href="https://github.com/hunterD3CD/11-note-taker-express"><i class="fab fa-github fa-5x"></i></a>
       </div>
     </section>
   )

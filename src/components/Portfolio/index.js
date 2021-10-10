@@ -3,7 +3,7 @@ import React from 'react'
 // import PhotoList from '../PhotoList';
 import project1 from "../../assets/small/pizzahunt.jpg";
 import project2 from "../../assets/small/pethome.jpg";
-import project3 from "../../assets/small/notetaker.jpg";
+import project3 from "../../assets/small/photovote.jpg";
 import project4 from "../../assets/small/zookeeper.jpg";
 
 // ////////////////////////////////////////////////// About Component /////////////////////////////////////////////////////////////
@@ -18,12 +18,14 @@ function Portfolio() {
         <div className="flex-column">
           <a href="https://pure-temple-98078.herokuapp.com/">view project 1</a>
           <a href="https://github.com/hunterD3CD/Pizzahunt-Nosql">github</a>
-          <img
+          <a href="https://pure-temple-98078.herokuapp.com/">
+          <img 
             src={project1}
             alt="project 1"
             className="img-thumbnail mx-1"
             key="project1"
             />
+            </a>
         </div>
         <div className="flex-column">
           <a href="https://project-online-pet-home.herokuapp.com/">view project 2</a>
@@ -36,8 +38,8 @@ function Portfolio() {
             />
         </div>
         <div className="flex-column">
-          <a href="https://note-taker-11express.herokuapp.com/">view project 3</a>
-          <a href="https://github.com/hunterD3CD/11-note-taker-express">github</a>
+          <a href="https://project-3-photo-vote.herokuapp.com/">view project 3</a>
+          <a href="https://github.com/hunterD3CD/photo_voting">github</a>
           <img
             src={project3}
             alt="project 3"
