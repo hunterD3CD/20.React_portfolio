@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/20.React_portfolio/static/css/main.b6484276.chunk.css",
-    "main.js": "/20.React_portfolio/static/js/main.b498f879.chunk.js",
-    "main.js.map": "/20.React_portfolio/static/js/main.b498f879.chunk.js.map",
+    "main.js": "/20.React_portfolio/static/js/main.48c8122a.chunk.js",
+    "main.js.map": "/20.React_portfolio/static/js/main.48c8122a.chunk.js.map",
     "runtime-main.js": "/20.React_portfolio/static/js/runtime-main.c3ab961a.js",
     "runtime-main.js.map": "/20.React_portfolio/static/js/runtime-main.c3ab961a.js.map",
     "static/js/2.68bd99e3.chunk.js": "/20.React_portfolio/static/js/2.68bd99e3.chunk.js",
@@ -11,8 +11,8 @@
     "static/css/main.b6484276.chunk.css.map": "/20.React_portfolio/static/css/main.b6484276.chunk.css.map",
     "static/js/2.68bd99e3.chunk.js.LICENSE.txt": "/20.React_portfolio/static/js/2.68bd99e3.chunk.js.LICENSE.txt",
     "static/media/cover-image.7345da58.jpg": "/20.React_portfolio/static/media/cover-image.7345da58.jpg",
-    "static/media/notetaker.1290bfdc.jpg": "/20.React_portfolio/static/media/notetaker.1290bfdc.jpg",
     "static/media/pethome.50a07f79.jpg": "/20.React_portfolio/static/media/pethome.50a07f79.jpg",
+    "static/media/photovote.4f3e496d.jpg": "/20.React_portfolio/static/media/photovote.4f3e496d.jpg",
     "static/media/pizzahunt.e2c0ab4e.jpg": "/20.React_portfolio/static/media/pizzahunt.e2c0ab4e.jpg",
     "static/media/zookeeper.7b697425.jpg": "/20.React_portfolio/static/media/zookeeper.7b697425.jpg"
   },
@@ -20,6 +20,6 @@
     "static/js/runtime-main.c3ab961a.js",
     "static/js/2.68bd99e3.chunk.js",
     "static/css/main.b6484276.chunk.css",
-    "static/js/main.b498f879.chunk.js"
+    "static/js/main.48c8122a.chunk.js"
   ]
 }
